@@ -8,32 +8,32 @@
 
 // __________________________________________________
 // add package
-package org.game;
+    package org.game;
 // __________________________________________________
 
 // __________________________________________________
 // import for this project
-import java.util.Random;
-import java.util.Scanner;
-import static java.lang.System.exit;
+    import java.util.Random;
+    import java.util.Scanner;
+    import static java.lang.System.exit;
 // __________________________________________________
 
 // __________________________________________________
 // class main
-public class Main {
-    public static void main(String[] args) {
-        // Generate a random number between 1 and 20
-        Random random = new Random();
-        int randomNumber = random.nextInt(20) + 1;
+    public class Main {
+        public static void main(String[] args) {
+            // Generate a random number between 1 and 20
+            Random random = new Random();
+            int randomNumber = random.nextInt(20) + 1;
 
-        // Create a Scanner object for user input
-        Scanner scan = new Scanner(System.in);
+            // Create a Scanner object for user input
+            Scanner scan = new Scanner(System.in);
 
-        // Welcome message and prompt for the user's name
-        System.out.println("Hello, welcome to the Mystery Number Game in Java!");
-        System.out.println("What is your name? ");
-        String name = scan.next();
-        Game gamer = new Game(name);
+            // Welcome message and prompt for the user's name
+            System.out.println("Hello, welcome to the Mystery Number Game in Java!");
+            System.out.println("What is your name? ");
+            String name = scan.next();
+            Game gamer = new Game(name);
     /// ------------
 
     /// ------------
