@@ -11,4 +11,16 @@ package org.game.verification;
 // class Verification
 public class Verification {
 
+    public int verification(String value){
+        try {
+            // Convert the value to an integer
+            return Integer.parseInt(value);
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Please enter a valid integer.");
+                // Indicate a failed conversion
+              return -1; 
+            }
+
+    }
+
 }

@@ -39,9 +39,10 @@
     /// ------------
         // ceat variable Index with default value is null
         boolean i = false;
+        int numbertry = 0;
       do {
             // Display the challenge to the user
-            System.out.println("I've selected a random number between 2 and 21. Can you guess it, " + gamer.getHostName() + "?");
+            System.out.println("I've selected a random number between 1 and 20. Can you guess it, " + gamer.getHostName() + "?");
 
             // Prompt the user to enter their guess
             System.out.print("Enter your guess number: ");
@@ -53,9 +54,16 @@
             // Check if the guess is correct
             if (userGuess == randomNumber) {
                 System.out.println("Congratulations! You guessed the correct number.");
+                System.out.println("you have guess nuber in " + numbertry + " try .");
+                exit(0);
             } else {
+                     // Display if the guess is greater or less than the correct number
+                    if (userGuess < randomNumber) {
+                         System.out.println("Sorry, " + gamer.getHostName() + ", your guess is less than the correct number.");
+                    } else {
+                         System.out.println("Sorry, " + gamer.getHostName() + ", your guess is greater than the correct number.");
+                    }
                 // Display the correct number and ask if the user wants to try again
-                System.out.println("Sorry, " + gamer.getHostName() + ", the correct number was: " + randomNumber);
                 System.out.println("Would you like to try again? (Y/n)");
 
                 // Get the user's response
@@ -63,6 +71,7 @@
 
                 // Check if the user wants to try again
                 if (userAvis.equalsIgnoreCase("Y")) {
+                    /*
                     // Ask if the user wants to change their name
                     System.out.println("Did you change your name? (Y/n)");
                     String questionName = scan.next();
@@ -78,11 +87,15 @@
                         System.out.println("No problem.");
                         i = true;
                     }
+*/
                 } else {
                     // End the game if the user does not want to try again
                     System.out.println("Sorry, have a good day.");
+                    System.out.println("Sorry, " + gamer.getHostName() + ", the correct number was: " + randomNumber);
                     exit(0);
                 }
+                numbertry++;
+              
             }
         }  while(i = true);
     }
