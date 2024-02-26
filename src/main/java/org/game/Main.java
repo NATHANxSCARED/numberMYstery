@@ -22,9 +22,9 @@
 // class main
     public class Main {
         public static void main(String[] args) {
-            // Generate a random number between 1 and 20
+            // Generate a random number between 1 and 50
             Random random = new Random();
-            int randomNumber = random.nextInt(20) + 1;
+            int randomNumber = random.nextInt(50) + 1;
 
             // Create a Scanner object for user input
             Scanner scan = new Scanner(System.in);
@@ -42,7 +42,7 @@
         int numbertry = 0;
       do {
             // Display the challenge to the user
-            System.out.println("I've selected a random number between 1 and 20. Can you guess it, " + gamer.getHostName() + "?");
+            System.out.println("I've selected a random number between 1 and 50nathan. Can you guess it, " + gamer.getHostName() + "?");
 
             // Prompt the user to enter their guess
             System.out.print("Enter your guess number: ");
@@ -88,11 +88,14 @@
                         i = true;
                     }
 */
-                } else {
+                } if (userAvis.equalsIgnoreCase("n")) {
                     // End the game if the user does not want to try again
                     System.out.println("Sorry, have a good day.");
                     System.out.println("Sorry, " + gamer.getHostName() + ", the correct number was: " + randomNumber);
                     exit(0);
+                }
+                else{
+                    System.out.println("Error : not corect value for chose");
                 }
                 numbertry++;
               
