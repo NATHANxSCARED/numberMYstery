@@ -1,2 +1,2 @@
 # Number mystery in java 
-## gess the nuber in less try posible 
+## The goal of this little game is to guess the number generated in as few moves as possible.
