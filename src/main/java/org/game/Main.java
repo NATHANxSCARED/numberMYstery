@@ -1,8 +1,9 @@
 /*
      * Name : Nathan Vittoni
+     * Email : nathan@vittoni.ch
      * Date : 19 janvier 2024
      * Project name : Number mystey
-     * But : user has to guess the number but it is randomly generated 
+     * goal : user has to guess the number but it is randomly generated 
 */
 // __________________________________________________
 
