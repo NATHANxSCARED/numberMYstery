@@ -1,9 +1,9 @@
 /*
- * Name : Nathan Vittoni
- * Date : 19 janvier 2024
- * Project name : Number mystey
- * But : l'utilisateur doit deviner le nombre generer
- */
+     * Name : Nathan Vittoni
+     * Date : 19 janvier 2024
+     * Project name : Number mystey
+     * But : user has to guess the number but it is randomly generated 
+*/
 // __________________________________________________
 
 // __________________________________________________
@@ -66,7 +66,7 @@ public class Main {
                 System.out.println("Congratulations! You guessed the correct number.");
                 System.out.println("you have guess nuber in " + numbertry + " try .");
                 exit(0);
-            } else if(userGuess >=0 && userGuess<= 50) {
+            } else if (userGuess >=0 && userGuess<= 50) {
                 // Display if the guess is greater or less than the correct number
                 if (userGuess < randomNumber) {
                     System.out.println("Sorry, " + gamer.getHostName() + ", your number is less than the correct number.");
@@ -111,8 +111,7 @@ public class Main {
                 }
                 numbertry++;
 
-            }
-            else {
+            } else {
                 logger.info("error: the nuber is not between 1 and 50");
                 break;
             }
